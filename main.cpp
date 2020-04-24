@@ -12,12 +12,12 @@ int main()
 	LinkedList list;
 	list.insert(0, 5);
 
-	list = std::move(copyList); //здесь из списка copyList все узлы переносятся в list, при чем переносятся с удалением их из copyList
+	list = std::move(copyList); //Р·РґРµСЃСЊ РёР· СЃРїРёСЃРєР° copyList РІСЃРµ СѓР·Р»С‹ РїРµСЂРµРЅРѕСЃСЏС‚СЃСЏ РІ list, РїСЂРё С‡РµРј РїРµСЂРµРЅРѕСЃСЏС‚СЃСЏ СЃ СѓРґР°Р»РµРЅРёРµРј РёС… РёР· copyList
 
 	for (size_t i = 0; i < copyList.size() - 1; i++)
-		cout << "Старый список" << copyList[i] << endl;
+		cout << "РЎС‚Р°СЂС‹Р№ СЃРїРёСЃРѕРє" << copyList[i] << endl;
 
 	for (size_t i = 0; i < list.size() - 1; i++)
-		cout << "Новый список" << list[i] << endl;
+		cout << "РќРѕРІС‹Р№ СЃРїРёСЃРѕРє" << list[i] << endl;
 }
 
